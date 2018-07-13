@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>test-task</title>
+      <meta name="keywords" content="keywords">
+      <meta name="description" content="description">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--favicon-->
+          <link rel="shortcut icon" sizes="" href="img/favicon/favicon.ico" type="image/x-icon">
+          <link rel="apple-touch-icon" sizes="" href="img/favicon/apple-touch-icon.png" type="">
+          <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" type="">
+          <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" type="">
+          <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" type="">
+          <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" type="">
+          <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" type="">
+          <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" type="">
+          <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" type="">
+      <!--viewport-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+      <!-- Chrome, Firefox OS and Opera-->
+      <meta name="theme-color" content="#000"><!-- Windows Phone -->
+      <meta name="msapplication-navbutton-color" content="#000"><!-- iOS Safari -->
+      <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav" id="nav">
+        <button class="hamburger hamburger--collapse" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        <div class="nav__box">
+          <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#personal_info">Личная информация</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#experience">Опыт</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#java_script">JavaScript</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">О себе</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <h1 class="header__title">Анкета</h1>
+    </div>
+    <div class="wrapper">
+      <div class="personal__wrap" id="personal_info"><img class="personal__icon" src="img/icon_book.svg" alt="book_icon">
+        <form class="personal__form">
+          <legend class="personal__title">Личная информация</legend>
+          <fieldset class="personal__fields">
+            <input placeholder="ФИО">
+            <select class="dropdown yearpicker" name="yearpicker">
+              <option value="hide">Год рождения</option>
+            </select>
+            <input placeholder="Место проживания">
+            <input placeholder="Skype">
+            <input placeholder="E-mail">
+          </fieldset><img class="personal__icon" id="experience" src="img/icon_checkboxes.svg" alt="checkboxes_icon">
+          <legend class="personal__title">Расскажите о своем опыте</legend>
+          <fieldset class="personal__skills">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <input class="skills__checkbox" id="1" type="checkbox" value="1">
+                    <label for="1">БЭМ/OOCSS</label>
+                  </td>
+                  <td>
+                    <input class="skills__checkbox" id="2" type="checkbox" value="2">
+                    <label for="2">Верстаю семантично</label>
+                  </td>
+                  <td>
+                    <input class="skills__checkbox" id="3" type="checkbox" value="3">
+                    <label for="3">Webpack</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input class="skills__checkbox" id="4" type="checkbox" value="4">
+                    <label for="4">Stylus/LESS/SASS</label>
+                  </td>
+                  <td>
+                    <input class="skills__checkbox" id="5" type="checkbox" value="5">
+                    <label for="5">ES2015/ES2016</label>
+                  </td>
+                  <td>
+                    <input class="skills__checkbox" id="6" type="checkbox" value="6">
+                    <label for="6">jQuery</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input class="skills__checkbox" id="7" type="checkbox" value="7">
+                    <label for="7">Работаю с SVG</label>
+                  </td>
+                  <td>
+                    <input class="skills__checkbox" id="8" type="checkbox" value="8">
+                    <label for="8">Gulp/GRUNT</label>
+                  </td>
+                  <td>
+                    <input class="skills__checkbox" id="9" type="checkbox" value="9">
+                    <label for="9">Ипользую Git</label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset><img class="personal__icon" id="java_script" src="img/icon_js.svg" alt="js_icon">
+          <legend class="personal__title">Уровень владения JavaScript</legend>
+          <fieldset class="personal__range">
+            <div class="personal__sign"><span>Не владею</span></div>
+            <div class="personal__sign"><span>Использую готовые</span><br>решения</div>
+            <div class="personal__sign"><span>Использую готовые решения</span><br>и умею и переделывать</div>
+            <div class="personal__sign"><span>Пишу сложный JS с нуля</span></div>
+            <input data-addui="slider" data-min="0" data-max="100" value="75">
+          </fieldset><img class="personal__icon" id="about" src="img/icon_about.svg" alt="js_icon">
+          <legend class="personal__title">Расскажите о себе</legend>
+          <fieldset class="personal__inform">
+            <p class="personal__about">Напишите несколько предложений, чем привлекла наша вакансия<br>и что вы ожидаете от работы у нас.</p>
+            <textarea class="personal__textarea" placeholder="Понравилась тем, что..."></textarea>
+            <button class="btn" type="button">Готово</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <!-- styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- scripts-->
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

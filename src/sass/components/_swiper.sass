@@ -1,0 +1,58 @@
+.addui-slider
+  display: block
+  position: relative
+  .addui-slider-track
+    display: block
+    position: relative
+    background: #e8e8e8
+    .addui-slider-range
+      display: block
+      background: linear-gradient(to right, #ccb1f1 0%, #435993 100%)
+      position: absolute
+  &.addui-slider-horizontal
+    height: auto
+    .addui-slider-track
+      height: 20px
+      width: 100%
+      -webkit-transform: skewY(-1deg)
+      transform: skewY(-1deg)
+      top: 9px
+      left: 0
+      .addui-slider-range
+        width: auto
+        height: 20px
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          left: 185px
+          top: 0
+          height: 100%
+          width: 1px
+          background-color: #e8e8e8
+        &:after
+          content: ''
+          position: absolute
+          left: 381px
+          top: 0
+          height: 100%
+          width: 1px
+          background-color: #e8e8e8
+
+.addui-slider-wrapper
+  overflow: hidden
+
+.addui-slider-handle
+  display: inline-block
+  border: 1px solid #bbb
+  width: 20px
+  height: 20px
+  background-color: #fff
+  border-radius: 0 30px 30px 30px
+  position: absolute
+  top: 30px
+  left: 50%
+  transform: translateX(-50%) rotate(45deg)
+  cursor: pointer
+
+

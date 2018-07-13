@@ -1,0 +1,40 @@
+{
+  "name": "web_builder",
+  "version": "1.0.0",
+  "description": "Automatization web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Khmelovsky/html-test"
+  },
+  "keywords": [
+    "webBuild"
+  ],
+  "author": "Khmelovskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "link_to_git"
+  },
+  "homepage": "https://github.com/Khmelovsky/",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^4.0.0",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.1.0",
+    "smart-grid": "^2.0.1"
+  }
+}

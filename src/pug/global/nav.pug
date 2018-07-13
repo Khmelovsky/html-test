@@ -1,0 +1,13 @@
+.nav#nav
+    button(class="hamburger hamburger--collapse" type="button")
+        span(class="hamburger-box")
+            span(class="hamburger-inner")
+    .nav__box
+        ul.nav__list
+            mixin nav__item(text, href)
+                li.nav__item
+                    a.nav__link(href=href)= text
+            +nav__item('Личная информация', '#personal_info')
+            +nav__item('Опыт', '#experience')
+            +nav__item('JavaScript', '#java_script')
+            +nav__item('О себе', '#about')

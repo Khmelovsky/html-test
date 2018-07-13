@@ -1,0 +1,24 @@
+{
+  "name": "web_builder",
+  "description": "Automatization web development",
+  "main": "index.js",
+  "authors": [
+    "Khmelovskyi"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "webBuild"
+  ],
+  "homepage": "link_to_git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jQuery": "^3.3.1",
+    "css-hamburgers": "^0.9.3"
+  }
+}
