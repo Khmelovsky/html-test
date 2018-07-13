@@ -1,0 +1,140 @@
+.personal
+  &__fields
+    display: inline-block
+    width: 100%
+    text-align: center
+    fieldset
+      width: 518px
+      margin: 0 auto 25px
+      //height: 58px
+      position: relative
+      margin-bottom: 25px
+      &:last-of-type
+        margin-bottom: 0  
+      label
+        position: absolute
+        top: 50%
+        left: 50%
+        color: #c8c8c8
+        text-align: center
+        font-size: 24px
+        font-weight: 400
+        font-family: $default-font
+        transform: translate(-50%, -50%)
+        transition: all 0.2s ease-in-out
+      input
+        border: 1px solid #c8c8c8
+        border-radius: 3px
+        display: inline-block
+        width: inherit
+        height: 58px
+        color: #c8c8c8
+        transition: all 0.2s ease-in-out
+        font-size: 24px
+        font-weight: 400
+        appearance: none
+        text-align: center
+        &[data-empty="false"] + label, &:valid + label, &:focus + label
+          color: #adadad
+          font-weight: 400
+          font-size: 14px
+          top: 12px
+        &:focus
+          border: 1px solid $blueColor
+          transition: .3s ease
+          padding: 20px 0 8px
+          height: 30px
+          font-size: 20px
+          color: $accentColor
+        &:valid
+          padding: 20px 0 8px
+          height: 30px
+          font-size: 20px
+          color: $accentColor
+        &:not(:focus)
+          transition: .3s ease 
+
+    & select.dropdown
+      border: none
+      display: inline-block
+      width: 318px
+      height: 58px
+      position: relative
+    & div.custom-dropdown
+      position: relative
+      width: auto
+      display: inherit
+      margin-bottom: 25px
+    & div.dropdown-styled
+      cursor: pointer
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      padding: 0 15px
+      line-height: 58px
+      border: 1px solid #c8c8c8
+      border-radius: 3px
+      text-align: center
+      color: #c8c8c8
+      font-size: 24px
+      font-weight: 400
+      background-color: #ffffff
+      &.active
+        color: $accentColor
+      &:after
+        content: ""
+        position: absolute
+        top: 24px
+        right: 18px
+        width: 15px
+        height: 10px
+        background-image: url(../img/carret.svg)
+        background-repeat: no-repeat
+        transition: .3s ease-in-out
+      &:active, &.active 
+        &:after
+          transform: rotateX(180deg)
+          transition: .3s ease-in-out
+        
+    & ul.select-options 
+      display: none
+      position: absolute
+      z-index: 3
+      top: 60px
+      right: 0
+      left: 0
+      z-index: 3
+      border-radius: 3px
+      margin: 0
+      padding: 0
+      list-style: none
+      height: 260px
+      background-color: #ffffff
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 8px 20px 0 rgba(0,0,0,.20)
+      li
+        cursor: pointer
+        line-height: 1
+        padding: 10px 0
+        color: $blueColor
+        font-size: 20px
+        font-weight: 300
+        &[rel="hide"] 
+          display: none
+        &:nth-child(2)
+          border-top-left-radius: 3px
+          border-top-right-radius: 3px
+        &:nth-last-of-type(2)
+          border-bottom-left-radius: 3px
+          border-bottom-right-radius: 3px
+          padding-bottom: 20px
+
+/*==========  Desktop First  ==========*/
+
+/* Small Devices, Small Screens */
+@media only screen and (max-width : 768px)
+  .personal
+    &__fields
+      fieldset
+        width: 100%

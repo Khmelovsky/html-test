@@ -10,10 +10,6 @@
     /**
      * Calculate scrollbar width
      *
-     * Called only once as a constant variable: we assume that scrollbar width never change
-     *
-     * Original function by Jonathan Sharp:
-     * http://jdsharp.us/jQuery/minute/calculate-scrollbar-width.php
      */
     var SCROLLBAR_WIDTH;
 

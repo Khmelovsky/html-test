@@ -1,5 +1,10 @@
 .nav
   width: 100%
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 10
+  background-color: #fff
   display: inline-block
   height: 80px
   line-height: 80px
@@ -27,20 +32,36 @@
 
 .hamburger
   display: none
+  .hamburger-box
+    .hamburger-inner
+      background-color: $accentColor
+      &:before,&:after
+        background-color: $accentColor
+
+
 
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 768px)
   .hamburger
     display: block
+    position: absolute
     z-index: 999999
-    height: 24px
     padding: 0
+    line-height: 1
+    height: 80px
+    &:hover
+      opacity: 1
+    &.is-active
+      .hamburger-box
+        .hamburger-inner 
+          background-color: #fff
+          &:before,&:after
+            background-color: #fff
+
+
   .nav
-    &__row
-      padding-left: 15px
-      padding-right: 15px
     &__box
       position: fixed
       left: 0
@@ -50,19 +71,20 @@
       display: none
       justify-content: center
       background: rgba(0,0,0,.8)
-      z-index: 9999
-      flex-direction: column
+      z-index: 10
     &__list
-      flex-direction: column
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
     &__item
-      margin-right: 0
+      margin: 40px 0
       text-align: center
-      margin-bottom: 10px
+      line-height: 1
+      display: block
     &__link
+      font-size: 25px
       color: #ffffff
-    &__language
-      text-align: center
-      width: 30%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)

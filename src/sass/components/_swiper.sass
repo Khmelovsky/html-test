@@ -1,3 +1,70 @@
+.personal__sign
+    position: relative
+    font-size: 13px
+    color: $accentColor
+    font-family: $default-font
+    font-weight: 300
+    line-height: 1.4
+    &:nth-child(1)
+      position: relative
+      top: 74px
+      &:before
+        content: ''
+        position: absolute
+        top: 24px
+        left: 1px 
+        background-image: url(../img/dotted-barline.svg)
+        background-repeat: repeat
+        background-size: cover
+        background-position: center
+        width: 2px
+        height: 20px
+    &:nth-child(2)
+      position: relative
+      top: 39px
+      left: 184px
+      &:before
+        content: ''
+        position: absolute
+        top: 40px
+        left: 1px 
+        background-image: url(../img/dotted-barline.svg)
+        background-size: cover
+        background-position: center
+        width: 2px
+        height: 20px
+    &:nth-child(3)
+      position: relative
+      top: 4px
+      left: 380px
+      &:before
+        content: ''
+        position: absolute
+        top: 38px
+        left: 1px 
+        background-image: url(../img/dotted-barline.svg)
+        background-size: cover
+        background-position: center
+        width: 2px
+        height: 20px
+    &:nth-child(4)
+      position: relative
+      top: -15px
+      left: 617px
+      width: auto
+      display: inline-block
+      &:before
+        content: ''
+        position: absolute
+        top: 22px
+        right: 0
+        background-image: url(../img/dotted-barline.svg)
+        background-size: cover
+        background-position: center
+        width: 1px
+        height: 20px
+
+
 .addui-slider
   display: block
   position: relative
@@ -55,4 +122,51 @@
   transform: translateX(-50%) rotate(45deg)
   cursor: pointer
 
+
+
+
+
+
+/*==========  Desktop First  ==========*/
+
+/* Medium Devices, Medium Screens */
+@media only screen and (max-width : 860px)
+  .personal
+    &__range
+      position: relative
+      width: 90%
+      margin: 0 auto
+    &__sign
+      position: absolute
+      display: table
+      &:nth-child(1)    
+        top: 4px
+        left: 0%
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        display: none
+      &:nth-child(4)
+        left: calc(100% - 151px)
+  .addui-slider
+    &.addui-slider-horizontal
+      .addui-slider-track
+        .addui-slider-range     
+          &:before
+            content: none
+          &:after
+            content: none
+
+/* Medium Devices, Medium Screens */
+@media only screen and (max-width : 500px)
+ .addui-slider
+    &.addui-slider-horizontal
+      .addui-slider-track
+        height: 40px
+        transform: skewX(0deg)
+        .addui-slider-range
+          height: 40px
+
+    .addui-slider-handle
+      top: 48px
 

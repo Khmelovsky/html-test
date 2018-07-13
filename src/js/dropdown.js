@@ -3,7 +3,7 @@ $('select').each(function(){
   
     $this.addClass('select-hidden'); 
     $this.wrap('<div class="custom-dropdown"></div>');
-    $this.after('<div class="dropdown-styled"></div>');
+    $this.after('<div class="dropdown-styled"><span></span</div>');
 
     var $styledDropDown = $this.next('div.dropdown-styled');
     $styledDropDown.text($this.children('option').eq(0).text());
@@ -33,19 +33,19 @@ $('select').each(function(){
         $('div.dropdown-styled.active').not(this).each(function(){
             $(this).removeClass('active').next('ul.select-options').hide();
         });
-        $(this).toggleClass('active').next('ul.select-options').toggle();
+        $(this).next('ul.select-options').toggle();
     });
 
    $listItems.click(function(e) {
             e.stopPropagation();
-            $styledDropDown.text($(this).text()).removeClass('active');
+            $styledDropDown.text($(this).text()).addClass('active');
             $this.val($(this).attr('rel'));
             $list.hide();
-             console.log($this.val());
+             //console.log($this.val());
         });
    
     $(document).click(function() {
-        $styledDropDown.removeClass('active');
+        //$styledDropDown.removeClass('active');
         $list.hide();
     });
 

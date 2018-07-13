@@ -1,0 +1,64 @@
+.skills__checkbox
+  position: absolute
+  opacity: 0
+  + label
+    position: relative
+    cursor: pointer
+    padding: 0
+    font-size: 16px
+    font-weight: 300
+    font-family: $default-font
+    color: #000
+    &:before
+      content: ''
+      margin-right: 12px
+      display: inline-block
+      vertical-align: text-top
+      width: 20px
+      height: 20px
+      background: white
+      border: 1px solid $blueColor
+      border-radius: 3px
+  &:hover + label:before
+    background: #e9efff
+    transition: .2s ease
+  &:checked + label:before
+    background: $blueColor
+  &:disabled + label
+    color: #b8b8b8
+    cursor: auto
+    &:before
+      box-shadow: none
+      background: #ddd
+  &:checked + label:after
+    content: ''
+    position: absolute
+    left: 5px
+    top: 9px
+    background: white
+    width: 2px
+    height: 2px
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white
+    transform: rotate(45deg)
+
+/*==========  Desktop First  ==========*/
+
+/* Medium Devices, Medium Screens */
+@media only screen and (max-width : 992px)
+  .personal
+    &__skills
+      width: 80%
+      margin: auto
+/* Small Devices, Small Screens */
+@media only screen and (max-width : 680px)
+  .personal
+    &__skills
+      width: 192px
+      table
+        tr
+          td
+            width: 100%
+            display: block
+            margin-bottom: 10px
+      
+

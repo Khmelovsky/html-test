@@ -11,6 +11,14 @@
     font-size: 30px
     font-weight: 300
     margin-bottom: 50px
+  &__skills
+    margin-bottom: 130px
+    table
+      width: 100%
+      height: 90px
+      max-height: 90px
+  &__range
+    margin-top: -50px
   &__about
     font-size: 16px
     font-family: $default-font
@@ -29,7 +37,7 @@
     resize: none
     margin: 40px auto 0
     display: block
-    color: #c8c8c8
+    color: $accentColor
     font-size: 20px
     font-weight: 400
     text-align: left
@@ -39,228 +47,6 @@
       font-size: 20px
       font-weight: 400
       text-align: left
-  &__sign
-    position: relative
-    font-size: 13px
-    color: $accentColor
-    font-family: $default-font
-    font-weight: 300
-    line-height: 1.4
-    &:nth-child(1)
-      position: relative
-      top: 74px
-      &:before
-        content: ''
-        position: absolute
-        top: 24px
-        left: 1px 
-        background-image: url(../img/dotted-barline.svg)
-        background-repeat: repeat
-        background-size: cover
-        background-position: center
-        width: 2px
-        height: 20px
-    &:nth-child(2)
-      position: relative
-      top: 39px
-      left: 184px
-      &:before
-        content: ''
-        position: absolute
-        top: 40px
-        left: 1px 
-        background-image: url(../img/dotted-barline.svg)
-        background-size: cover
-        background-position: center
-        width: 2px
-        height: 20px
-    &:nth-child(3)
-      position: relative
-      top: 4px
-      left: 380px
-      &:before
-        content: ''
-        position: absolute
-        top: 38px
-        left: 1px 
-        background-image: url(../img/dotted-barline.svg)
-        background-size: cover
-        background-position: center
-        width: 2px
-        height: 20px
-    &:nth-child(4)
-      position: relative
-      top: -15px
-      left: 617px
-      width: auto
-      display: inline-block
-      &:before
-        content: ''
-        position: absolute
-        top: 22px
-        right: 0
-        background-image: url(../img/dotted-barline.svg)
-        background-size: cover
-        background-position: center
-        width: 1px
-        height: 20px
-  &__fields
-    display: inline-block
-    width: auto
-    text-align: center
-    & select.dropdown
-      border: none
-      display: inline-block
-      width: 318px
-      height: 58px
-      position: relative
-    & div.custom-dropdown
-      position: relative
-      width: auto
-      display: inherit
-    & div.dropdown-styled
-      cursor: pointer
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      padding: 0 15px
-      line-height: 58px
-      border: 1px solid #c8c8c8
-      border-radius: 3px
-      text-align: center
-      color: #c8c8c8
-      font-size: 24px
-      font-weight: 400
-      background-color: #ffffff
-      &:after
-        content: ""
-        position: absolute
-        top: 24px
-        right: 18px
-        width: 15px
-        height: 10px
-        background-image: url(../img/carret.svg)
-        background-repeat: no-repeat
-        transition: .3s ease-in-out
-      &:active, &.active 
-        &:after
-          transform: rotateX(180deg)
-          transition: .3s ease-in-out
-        
-    & ul.select-options 
-      display: none
-      position: absolute
-      z-index: 3
-      top: 60px
-      right: 0
-      left: 0
-      z-index: 3
-      border-radius: 3px
-      margin: 0
-      padding: 0
-      list-style: none
-      height: 260px
-      background-color: #ffffff
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 8px 20px 0 rgba(0,0,0,.20)
-      li
-        cursor: pointer
-        line-height: 1
-        padding: 10px 0
-        color: $blueColor
-        font-size: 20px
-        font-weight: 300
-        &[rel="hide"] 
-          display: none
-        &:nth-child(2)
-          border-top-left-radius: 3px
-          border-top-right-radius: 3px
-        &:nth-last-of-type(2)
-          border-bottom-left-radius: 3px
-          border-bottom-right-radius: 3px
-          padding-bottom: 20px
-  
-    input
-      border: 1px solid #c8c8c8
-      border-radius: 3px
-      display: inline-block
-      width: 518px
-      height: 58px
-      max-width: 518px
-      margin-bottom: 25px
-      padding: 0 20px
-      color: #c8c8c8
-      font-size: 24px
-      font-weight: 400
-      &:focus
-        border: 1px solid $blueColor
-        transition: .3s ease
-        &:placeholder
-          font-size: 14px
-      &:not(:focus)
-        transition: .3s ease
-
-      &:nth-child(3)
-        margin-top: 25px
-      &:last-of-type
-        margin-bottom: 0
-      @include placeholder 
-        color: #c8c8c8
-        font-size: 24px
-        font-weight: 400
-        text-align: center
-  &__skills
-    margin-bottom: 130px
-    table
-      width: 100%
-      height: 90px
-      max-height: 90px
-  &__range
-    margin-top: -50px
-
-.skills__checkbox
-  position: absolute
-  opacity: 0
-  + label
-    position: relative
-    cursor: pointer
-    padding: 0
-    font-size: 16px
-    font-weight: 300
-    font-family: $default-font
-    color: #000
-    &:before
-      content: ''
-      margin-right: 12px
-      display: inline-block
-      vertical-align: text-top
-      width: 20px
-      height: 20px
-      background: white
-      border: 1px solid $blueColor
-      border-radius: 3px
-  &:hover + label:before
-    background: #e9efff
-    transition: .2s ease
-  &:checked + label:before
-    background: $blueColor
-  &:disabled + label
-    color: #b8b8b8
-    cursor: auto
-    &:before
-      box-shadow: none
-      background: #ddd
-  &:checked + label:after
-    content: ''
-    position: absolute
-    left: 5px
-    top: 9px
-    background: white
-    width: 2px
-    height: 2px
-    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white
-    transform: rotate(45deg)
 
 
 
@@ -275,9 +61,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-  .advantages
-    &__item
-      margin-bottom: 90px
+  /**/
+
 
 
 
@@ -288,7 +73,11 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-  /**/
+  .personal
+    &__textarea
+      width: 70%
+
+
 
 
 /* Extra Small Devices, Phones */

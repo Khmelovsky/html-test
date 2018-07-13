@@ -1,77 +1,22 @@
 #personal_info.personal__wrap
-	img.personal__icon(src="img/icon_book.svg" alt="book_icon")
-	form.personal__form
+		img.personal__icon(src="img/icon_book.svg" alt="book_icon")
 		legend.personal__title
 			| Личная информация
 		fieldset.personal__fields
-			input(placeholder="ФИО")
+			fieldset
+				input#firstName(required)
+				label(for="firstName") ФИО
 			select.dropdown.yearpicker(name="yearpicker")
 				option(value="hide") Год рождения
-			input(placeholder="Место проживания")
-			input(placeholder="Skype")
-			input(placeholder="E-mail")
-		img#experience.personal__icon(src="img/icon_checkboxes.svg" alt="checkboxes_icon")
-		legend.personal__title
-			| Расскажите о своем опыте
-		fieldset.personal__skills
-			table
-				tbody
-					tr
-						td
-							input#1.skills__checkbox(type='checkbox', value='1')
-							label(for='1') БЭМ/OOCSS
-						td
-							input#2.skills__checkbox(type='checkbox', value='2')
-							label(for='2') Верстаю семантично
-						td
-							input#3.skills__checkbox(type='checkbox', value='3')
-							label(for='3') Webpack
-					tr
-						td
-							input#4.skills__checkbox(type='checkbox', value='4')
-							label(for='4') Stylus/LESS/SASS
-						td
-							input#5.skills__checkbox(type='checkbox', value='5')
-							label(for='5') ES2015/ES2016
-						td
-							input#6.skills__checkbox(type='checkbox', value='6')
-							label(for='6') jQuery
-					tr
-						td
-							input#7.skills__checkbox(type='checkbox', value='7')
-							label(for='7') Работаю с SVG
-						td
-							input#8.skills__checkbox(type='checkbox', value='8')
-							label(for='8') Gulp/GRUNT
-						td
-							input#9.skills__checkbox(type='checkbox', value='9')
-							label(for='9') Ипользую Git
-		img#java_script.personal__icon(src="img/icon_js.svg" alt="js_icon")
-		legend.personal__title
-			| Уровень владения JavaScript
-		fieldset.personal__range
-			.personal__sign
-				span Не владею
-			.personal__sign
-				span Использую готовые
-				br
-				| решения
-			.personal__sign
-				span Использую готовые решения
-				br
-				| и умею и переделывать
-			.personal__sign
-				span Пишу сложный JS с нуля
-			input(data-addui='slider', data-min='0', data-max='100', value='75')
-		img#about.personal__icon(src="img/icon_about.svg" alt="js_icon")
-		legend.personal__title
-			| Расскажите о себе
-		fieldset.personal__inform
-			p.personal__about Напишите несколько предложений, чем привлекла наша вакансия
-				br
-				| и что вы ожидаете от работы у нас.
-			textarea(placeholder="Понравилась тем, что...").personal__textarea
-			button.btn(type="button") Готово
+			fieldset
+				input#birthPlace(required)
+				label(for="birthPlace") Место проживания
+			fieldset
+				input#skype(required)
+				label(for="skype") Skype
+			fieldset
+				input#email(required)
+				label(for="email") E-mail
 
 
 
