@@ -1,8 +1,7 @@
-$(document).ready(function () {
+ $(document).ready(function () {
 
     var navBox = $('.nav__box');
     var hamburger = $('.hamburger');
-    var linkItem = $('.nav__link');
     var $window = $(window);
 
     hamburger.on('click', function () {
@@ -20,13 +19,26 @@ $(document).ready(function () {
         }
     });
 
-    linkItem.on('click', function () {
-         navBox.fadeOut();
-         hamburger.removeClass('is-active');
+    navBox.on("click", "a", null, function () {
+        if (hamburger.hasClass('is-active')){
+            navBox.fadeOut();
+            hamburger.removeClass('is-active');
+            $window.disablescroll("undo");
+        }
+    });
+
+    $("#nav").on("click","a", function (event) {
+        event.preventDefault();
+
+        var id  = $(this).attr('href'),
+
+            top = $(id).offset().top;
+
+        $('body,html').animate({scrollTop: top}, 1500);
     });
 
     var prevScrollpos = window.pageYOffset;
-    var offset = $(".personal__skills").offset();
+    var offset = $(".personal__range").offset();
     var blockOffset = offset.top;
     window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;

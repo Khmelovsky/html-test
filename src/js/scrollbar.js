@@ -101,7 +101,7 @@
 
         this.$scrollContentEl = this.$el.find('.' + this.theme.scrollContent);
 
-        this.resizeScrollContent();
+       // this.resizeScrollContent();
 
         if (this.options.autoHide) {
             this.$el.on('mouseenter', $.proxy(this.flashScrollbar, this));
