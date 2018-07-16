@@ -7,8 +7,8 @@
       <meta name="description" content="description">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!--favicon-->
-          <link rel="shortcut icon" sizes="" href="img/favicon/favicon.ico" type="image/x-icon">
-          <link rel="apple-touch-icon" sizes="" href="img/favicon/apple-touch-icon.png" type="image/png">
+          <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+          <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" type="image/png">
           <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" type="image/png">
           <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" type="image/png">
           <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" type="image/png">
@@ -43,7 +43,7 @@
     <div class="wrapper">
       <form class="personal__form">
         <div class="personal__wrap" id="personal_info"><img class="personal__icon" src="img/icon_book.svg" alt="book_icon">
-          <legend class="personal__title">Личная информация</legend>
+          <div class="personal__title">Личная информация</div>
           <fieldset class="personal__fields">
             <fieldset>
               <input id="firstName" type="text" required>
@@ -66,7 +66,7 @@
             </fieldset>
           </fieldset>
         </div><img class="personal__icon" id="experience" src="img/icon_checkboxes.svg" alt="checkboxes_icon">
-        <legend class="personal__title">Расскажите о своем опыте</legend>
+        <div class="personal__title">Расскажите о своем опыте</div>
         <fieldset class="personal__skills">
           <table>
             <tbody>
@@ -115,15 +115,15 @@
             </tbody>
           </table>
         </fieldset><img class="personal__icon" id="java_script" src="img/icon_js.svg" alt="js_icon">
-        <legend class="personal__title">Уровень владения JavaScript</legend>
-        <fieldset class="personal__range">
+        <div class="personal__title">Уровень владения JavaScript
+          <div class="personal__range"></div>
           <div class="personal__sign"><span>Не владею</span></div>
           <div class="personal__sign"><span>Использую готовые</span><br>решения</div>
           <div class="personal__sign"><span>Использую готовые решения</span><br>и умею и переделывать</div>
           <div class="personal__sign"><span>Пишу сложный JS с нуля</span></div>
           <input data-addui="slider" data-min="0" data-max="100" value="75">
-        </fieldset><img class="personal__icon" id="about" src="img/icon_about.svg" alt="js_icon">
-        <legend class="personal__title">Расскажите о себе</legend>
+        </div><img class="personal__icon" id="about" src="img/icon_about.svg" alt="js_icon">
+        <div class="personal__title">Расскажите о себе</div>
         <fieldset class="personal__inform">
           <p class="personal__about">Напишите несколько предложений, чем привлекла наша вакансия<br>и что вы ожидаете от работы у нас.</p>
           <textarea class="personal__textarea" id="message" placeholder="Понравилась тем, что..."></textarea>
