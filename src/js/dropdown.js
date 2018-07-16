@@ -44,9 +44,16 @@ $('select').each(function(){
             $list.hide();
              //console.log($this.val());
         });
-   // carret toggle
-    $(".dropdown-styled").addClass('active');
+    // carret toggle
+    $('.dropdown-styled').click(function(){
+        $('.dropdown-styled').toggleClass('active');
+    });
+    // active age
+    $('.dropdown-styled').css('color', '#1c1c1c');
+      
+    $styledDropDown.removeClass('active');
     $(document).click(function() {
+        
         $list.hide();
     });
 
