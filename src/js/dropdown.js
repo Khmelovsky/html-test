@@ -45,11 +45,8 @@ $('select').each(function(){
              //console.log($this.val());
         });
    // carret toggle
-    $('.dropdown-styled').click(function(){
-        $(".dropdown-styled").toggleClass('active');
-    });
+    $(".dropdown-styled").addClass('active');
     $(document).click(function() {
-        //$styledDropDown.removeClass('active');
         $list.hide();
     });
 

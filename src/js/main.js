@@ -102,6 +102,7 @@
             $('#skype').val(snapshot.child('skype').val());
             $('#email').val(snapshot.child('email').val());
             $('#message').val(snapshot.child('message').val());
+            $('.dropdown-styled').text(snapshot.child('age').val());
             //checkboxes
             $('#box1').val(snapshot.child('box1').val()).ready(function(){
                if($('#box1').val() == 'true'){
