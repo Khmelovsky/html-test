@@ -16,7 +16,7 @@ $('select').each(function(){
     for (i = 1998; i > 1950; i--)
         {
             $('.yearpicker').append($('<option />').val(i).html(i));
-            $('.yearpicker-list').append($('<li />').attr("rel", i ).html(i));
+            $('.yearpicker-list').append($('<li />').val(i).html(i));
         }
 
     for (var i = 0; i < numberOfOptions; i++) {
@@ -25,6 +25,7 @@ $('select').each(function(){
             rel: $this.children('option').eq(i).val()
         }).appendTo($list);
     }
+
   
     var $listItems = $list.children('li');
   
@@ -39,11 +40,14 @@ $('select').each(function(){
    $listItems.click(function(e) {
             e.stopPropagation();
             $styledDropDown.text($(this).text()).addClass('active');
-            $this.val($(this).attr('rel'));
+            $this.val($(this).val());
             $list.hide();
              //console.log($this.val());
         });
-   
+   // carret toggle
+    $('.dropdown-styled').click(function(){
+        $(".dropdown-styled").toggleClass('active');
+    });
     $(document).click(function() {
         //$styledDropDown.removeClass('active');
         $list.hide();

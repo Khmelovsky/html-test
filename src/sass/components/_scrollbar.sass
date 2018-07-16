@@ -14,10 +14,20 @@
   bottom: 0
   padding-top: 10px
   -ms-overflow-style: none
-  /* hide browser scrollbar on IE10+
+  /* hide browser scrollbar on IE10+*/
+
+  /* hide scrollbar on Firefox*/
+@-moz-document url-prefix()
+  .simplebar .simplebar-scroll-content, [data-simplebar-direction] .simplebar-scroll-content
+    margin-right: -17px !important
+  .personal__textarea
+    overflow: -moz-hidden-unscrollable
+
 
 /* hide browser scrollbar on Webkit (Safari & Chrome) */
 
+.personal__textarea::-webkit-scrollbar
+  display: none
 .simplebar-scroll-content::-webkit-scrollbar
   display: none
 

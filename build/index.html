@@ -8,20 +8,20 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!--favicon-->
           <link rel="shortcut icon" sizes="" href="img/favicon/favicon.ico" type="image/x-icon">
-          <link rel="apple-touch-icon" sizes="" href="img/favicon/apple-touch-icon.png" type="">
-          <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" type="">
-          <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" type="">
-          <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" type="">
-          <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" type="">
-          <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" type="">
-          <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" type="">
-          <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" type="">
+          <link rel="apple-touch-icon" sizes="" href="img/favicon/apple-touch-icon.png" type="image/png">
+          <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" type="image/png">
+          <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" type="image/png">
+          <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" type="image/png">
+          <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" type="image/png">
+          <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" type="image/png">
+          <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" type="image/png">
+          <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" type="image/png">
       <!--viewport-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
       <!-- Chrome, Firefox OS and Opera-->
-      <meta name="theme-color" content="#000"><!-- Windows Phone -->
-      <meta name="msapplication-navbutton-color" content="#000"><!-- iOS Safari -->
-      <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+      <meta name="theme-color" content="#fff"><!-- Windows Phone -->
+      <meta name="msapplication-navbutton-color" content="#fff"><!-- iOS Safari -->
+      <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
     </head>
   <body>
     <div class="wrapper">
@@ -46,7 +46,7 @@
           <legend class="personal__title">Личная информация</legend>
           <fieldset class="personal__fields">
             <fieldset>
-              <input id="firstName" required>
+              <input id="firstName" type="text" required>
               <label for="firstName">ФИО</label>
             </fieldset>
             <select class="dropdown yearpicker" name="yearpicker">
@@ -72,44 +72,44 @@
             <tbody>
               <tr>
                 <td>
-                  <input class="skills__checkbox" id="1" type="checkbox" value="1">
-                  <label for="1">БЭМ/OOCSS</label>
+                  <input class="skills__checkbox" id="box1" type="checkbox" value="false">
+                  <label for="box1">БЭМ/OOCSS</label>
                 </td>
                 <td>
-                  <input class="skills__checkbox" id="2" type="checkbox" value="2">
-                  <label for="2">Верстаю семантично</label>
+                  <input class="skills__checkbox" id="box2" type="checkbox" value="false">
+                  <label for="box2">Верстаю семантично</label>
                 </td>
                 <td>
-                  <input class="skills__checkbox" id="3" type="checkbox" value="3">
-                  <label for="3">Webpack</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input class="skills__checkbox" id="4" type="checkbox" value="4">
-                  <label for="4">Stylus/LESS/SASS</label>
-                </td>
-                <td>
-                  <input class="skills__checkbox" id="5" type="checkbox" value="5">
-                  <label for="5">ES2015/ES2016</label>
-                </td>
-                <td>
-                  <input class="skills__checkbox" id="6" type="checkbox" value="6">
-                  <label for="6">jQuery</label>
+                  <input class="skills__checkbox" id="box3" type="checkbox" value="false">
+                  <label for="box3">Webpack</label>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <input class="skills__checkbox" id="7" type="checkbox" value="7">
-                  <label for="7">Работаю с SVG</label>
+                  <input class="skills__checkbox" id="box4" type="checkbox" value="false">
+                  <label for="box4">Stylus/LESS/SASS</label>
                 </td>
                 <td>
-                  <input class="skills__checkbox" id="8" type="checkbox" value="8">
-                  <label for="8">Gulp/GRUNT</label>
+                  <input class="skills__checkbox" id="box5" type="checkbox" value="false">
+                  <label for="box5">ES2015/ES2016</label>
                 </td>
                 <td>
-                  <input class="skills__checkbox" id="9" type="checkbox" value="9">
-                  <label for="9">Ипользую Git</label>
+                  <input class="skills__checkbox" id="box6" type="checkbox" value="false">
+                  <label for="box6">jQuery</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="skills__checkbox" id="box7" type="checkbox" value="false">
+                  <label for="box7">Работаю с SVG</label>
+                </td>
+                <td>
+                  <input class="skills__checkbox" id="box8" type="checkbox" value="false">
+                  <label for="box8">Gulp/GRUNT</label>
+                </td>
+                <td>
+                  <input class="skills__checkbox" id="box9" type="checkbox" value="false">
+                  <label for="box9">Ипользую Git</label>
                 </td>
               </tr>
             </tbody>
@@ -126,8 +126,8 @@
         <legend class="personal__title">Расскажите о себе</legend>
         <fieldset class="personal__inform">
           <p class="personal__about">Напишите несколько предложений, чем привлекла наша вакансия<br>и что вы ожидаете от работы у нас.</p>
-          <textarea class="personal__textarea" placeholder="Понравилась тем, что..."></textarea>
-          <button class="btn" type="submit">Готово</button>
+          <textarea class="personal__textarea" id="message" placeholder="Понравилась тем, что..."></textarea>
+          <button class="btn" id="save">Готово</button>
         </fieldset>
       </form>
     </div>
@@ -135,5 +135,17 @@
     <link rel="stylesheet" href="css/main.min.css">
     <!-- scripts-->
     <script src="js/main.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      var config = {
+      apiKey: "AIzaSyC8l-o3VYZbj-RdNIJw0M3icAmGa8_0CI0",
+      authDomain: "web-test-8b898.firebaseapp.com",
+      databaseURL: "https://web-test-8b898.firebaseio.com",
+      projectId: "web-test-8b898",
+      storageBucket: "web-test-8b898.appspot.com",
+      messagingSenderId: "158503038720"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>
