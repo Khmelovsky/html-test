@@ -3,6 +3,7 @@ Test task for «Веб-Мастерская»
 
 Firabase DB + jQuery
 -------------------------
+**demo:** http://khmelovsky.github.io
 
 For build project on your machine, please execute  several commands in terminal:
 
